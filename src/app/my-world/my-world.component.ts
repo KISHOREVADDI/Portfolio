@@ -28,10 +28,9 @@ import { Router, RouterModule } from '@angular/router';
             <p class="resume-description">Download my latest resume to learn more about my experience and skills</p>
             <div class="resume-buttons">
               <a 
-                href="/assets/resume.pdf" 
+                href="assets/resume.pdf" 
                 download="Kishore_Vaddi_Resume.pdf" 
-                class="resume-download-button"
-                (click)="onResumeDownload($event)">
+                class="resume-download-button">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                   <polyline points="7 10 12 15 17 10"/>
@@ -56,7 +55,7 @@ import { Router, RouterModule } from '@angular/router';
       <!-- Interactive Platforms Grid -->
       <div class="platforms-grid">
         <a 
-          href="https://github.com" 
+          href="https://github.com/KISHOREVADDI" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="platform-card"
@@ -110,7 +109,7 @@ import { Router, RouterModule } from '@angular/router';
         </a>
 
         <a 
-          href="https://codechef.com" 
+          href="https://www.codechef.com/users/kishore_1204" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="platform-card"
@@ -128,7 +127,7 @@ import { Router, RouterModule } from '@angular/router';
         </a>
 
         <a 
-          href="https://hackerrank.com" 
+          href="https://www.hackerrank.com/profile/kishorevaddi1204" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="platform-card"
@@ -201,73 +200,9 @@ export class MyWorldComponent {
     this.resumeHovered = false;
   }
 
-  async onResumeDownload(event: Event) {
-    event.preventDefault();
-    
-    try {
-      const resumeUrl = '/assets/resume.pdf';
-      const response = await fetch(resumeUrl);
-      
-      if (!response.ok) {
-        throw new Error('File not found');
-      }
-      
-      const contentLength = response.headers.get('content-length');
-      if (contentLength && parseInt(contentLength) === 0) {
-        alert('Resume file is empty (0 bytes)!\n\nPlease replace src/assets/resume.pdf with a valid PDF file.');
-        return;
-      }
-      
-      // Convert to blob
-      const blob = await response.blob();
-      
-      if (blob.size === 0) {
-        alert('Resume file is empty!\n\nPlease replace src/assets/resume.pdf with a valid PDF file.');
-        return;
-      }
-      
-      // Create download
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'Kishore_Vaddi_Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      
-      // Cleanup
-      setTimeout(() => {
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(url);
-      }, 100);
-      
-      console.log('Resume downloaded successfully');
-    } catch (error) {
-      console.error('Download error:', error);
-      alert('Unable to download resume.\n\nPlease ensure:\n1. resume.pdf is in src/assets folder\n2. File is a valid, non-empty PDF\n3. Restart Angular dev server after adding the file');
-    }
-  }
-
   viewResume() {
-    // Try to open resume in new tab
-    const resumeUrl = '/assets/resume.pdf';
-    
-    // First check if file exists and has content
-    fetch(resumeUrl, { method: 'HEAD' })
-      .then(response => {
-        const contentLength = response.headers.get('content-length');
-        
-        if (response.ok && contentLength && parseInt(contentLength) > 0) {
-          // File exists and has content, open it
-          window.open(resumeUrl, '_blank');
-        } else {
-          // File is empty or doesn't exist
-          alert('Resume file is empty or not found!\n\nPlease:\n1. Place a valid PDF file at: src/assets/resume.pdf\n2. Make sure the file is not empty (0 bytes)\n3. Restart the Angular dev server after adding the file\n\nCurrent file size: ' + (contentLength || '0') + ' bytes');
-        }
-      })
-      .catch(error => {
-        console.error('Error checking resume:', error);
-        alert('Unable to access resume file.\n\nPlease ensure:\n1. resume.pdf is in src/assets folder\n2. File is a valid, non-empty PDF\n3. Angular dev server is running\n4. Restart the server after adding the file');
-      });
+    const resumeUrl = 'assets/resume.pdf';
+    window.open(resumeUrl, '_blank');
   }
 
   onButtonHover() {

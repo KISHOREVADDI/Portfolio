@@ -44,3 +44,10 @@ If you already have a PDF version of your resume:
 
 The HTML file contains all your resume information formatted nicely. Just convert it to PDF using one of the methods above!
 
+
+
+
+
+
+
+

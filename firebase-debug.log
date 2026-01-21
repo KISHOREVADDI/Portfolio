@@ -1,0 +1,78 @@
+[debug] [2025-12-31T04:11:08.225Z] ----------------------------------------------------------------------
+[debug] [2025-12-31T04:11:08.227Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-12-31T04:11:08.227Z] CLI Version:   15.1.0
+[debug] [2025-12-31T04:11:08.227Z] Platform:      win32
+[debug] [2025-12-31T04:11:08.227Z] Node Version:  v24.11.1
+[debug] [2025-12-31T04:11:08.228Z] Time:          Wed Dec 31 2025 09:41:08 GMT+0530 (India Standard Time)
+[debug] [2025-12-31T04:11:08.228Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kisho\OneDrive\Desktop\Portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-12-31T04:11:13.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-31T04:11:13.277Z] > authorizing via signed-in user (kishorevaddi1204@gmail.com)
+[debug] [2025-12-31T04:11:13.277Z] Checked if tokens are valid: true, expires at: 1767157852812
+[debug] [2025-12-31T04:11:13.277Z] Checked if tokens are valid: true, expires at: 1767157852812
+[debug] [2025-12-31T04:11:13.279Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb [none]
+[debug] [2025-12-31T04:11:14.107Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb 403
+[debug] [2025-12-31T04:11:14.107Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-12-31T04:11:14.108Z] Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb had HTTP Error: 403, The caller does not have permission
+[debug] [2025-12-31T04:11:14.382Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to get Firebase project portfolio-9e8eb. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-12-31T04:13:47.735Z] ----------------------------------------------------------------------
+[debug] [2025-12-31T04:13:47.737Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-12-31T04:13:47.737Z] CLI Version:   15.1.0
+[debug] [2025-12-31T04:13:47.737Z] Platform:      win32
+[debug] [2025-12-31T04:13:47.737Z] Node Version:  v24.11.1
+[debug] [2025-12-31T04:13:47.737Z] Time:          Wed Dec 31 2025 09:43:47 GMT+0530 (India Standard Time)
+[debug] [2025-12-31T04:13:47.737Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kisho\OneDrive\Desktop\Portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-12-31T04:13:50.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-31T04:13:50.856Z] > authorizing via signed-in user (kishorevaddi1204@gmail.com)
+[debug] [2025-12-31T04:13:50.856Z] Checked if tokens are valid: true, expires at: 1767157852812
+[debug] [2025-12-31T04:13:50.856Z] Checked if tokens are valid: true, expires at: 1767157852812
+[debug] [2025-12-31T04:13:50.857Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb [none]
+[debug] [2025-12-31T04:13:51.513Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb 403
+[debug] [2025-12-31T04:13:51.513Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-12-31T04:13:51.514Z] Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb had HTTP Error: 403, The caller does not have permission
+[debug] [2025-12-31T04:13:51.777Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/portfolio-9e8eb had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\kisho\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to get Firebase project portfolio-9e8eb. Please make sure the project exists and your account has permission to access it.

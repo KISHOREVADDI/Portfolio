@@ -10,7 +10,7 @@ import { Router, RouterModule } from '@angular/router';
     <div class="page-content">
       <h1 class="page-title">About</h1>
       <div class="page-text">
-        <p>A skilled professional with expertise in Java 8, front-end development, and cyber security. Known how to use Burp Suite for security testing and familiar with VS Code and GitHub for basic coding and version control tasks. Committed to advancing a career in technology by leveraging technical skills to enhance software security and development processes.</p>
+        <p>A skilled professional with expertise in Java , front-end development, and cyber security. Known how to use Burp Suite for security testing and familiar with VS Code and GitHub for basic coding and version control tasks. Committed to advancing a career in technology by leveraging technical skills to enhance software security and development processes.</p>
       </div>
 
       <div class="resume-info-section">
@@ -100,7 +100,7 @@ export class AboutComponent {
   hoveredSkill = '';
 
   skills = [
-    { name: 'Java 8', level: 85, icon: '☕', delay: '0s' },
+    { name: 'Java ', level: 75, icon: '☕', delay: '0s' },
     { name: 'HTML', level: 90, icon: '📄', delay: '0.1s' },
     { name: 'CSS', level: 90, icon: '🎨', delay: '0.2s' },
     { name: 'BlockChain', level: 70, icon: '⛓️', delay: '0.3s' },
